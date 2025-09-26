@@ -1,30 +1,42 @@
 /*
-Professional CSS for Travel Explorer website pages
-Enhanced styling for Destinations, Luxury Packages, International Tours, and Car Rentals pages
-Using modern design principles with Poppins and Playfair Display fonts
+Additional CSS for Travel Explorer website pages
+Professional styles for Destinations, Honeymoon, International Tours, and Car Rentals pages
+Consistent with main homepage styling
 */
 
-/* Global Typography Update */
+/* Import same fonts as main page */
 body {
     font-family: 'Poppins', sans-serif;
 }
 
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-}
-
-/* Professional Navigation Logo Link Styling */
-.nav-logo a {
+/* Professional Navigation Styles (consistent with homepage) */
+.nav-logo h2 a {
     color: white;
     text-decoration: none;
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
-.nav-logo a:hover {
+.nav-logo i {
     color: #f4d03f;
-    transition: color 0.3s ease;
+    font-size: 1.6rem;
+}
+
+.cta-nav {
+    background: linear-gradient(135deg, #f4d03f, #e67e22) !important;
+    color: white !important;
+    padding: 0.7rem 1.5rem !important;
+    border-radius: 25px !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+}
+
+.cta-nav:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 10px 20px rgba(244, 208, 63, 0.3) !important;
 }
 
 /* Page Headers */
@@ -76,44 +88,17 @@ h1, h2, h3 {
 }
 
 .header-content h1 {
-    font-family: 'Playfair Display', serif;
     font-size: 3.5rem;
-    font-weight: 600;
+    font-weight: 300;
     margin-bottom: 1rem;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
-    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .header-content p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
-    opacity: 0.95;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.6;
-}
-
-.header-content .cta-button {
-    background: linear-gradient(135deg, #f4d03f, #e67e22);
-    color: white;
-    border: none;
-    padding: 15px 35px;
-    font-size: 1.1rem;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-weight: 600;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    box-shadow: 0 8px 25px rgba(244, 208, 63, 0.4);
-}
-
-.header-content .cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(244, 208, 63, 0.6);
-    background: linear-gradient(135deg, #e67e22, #f4d03f);
+    opacity: 0.9;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .breadcrumb {
@@ -143,21 +128,17 @@ h1, h2, h3 {
 }
 
 .section-header h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.8rem;
-    color: #2c3e50;
-    font-weight: 600;
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 300;
     margin-bottom: 1rem;
-    letter-spacing: 1px;
 }
 
 .section-header p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #666;
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
-    line-height: 1.6;
-    font-weight: 400;
 }
 
 /* Filter Section (Destinations Page) */
@@ -175,24 +156,21 @@ h1, h2, h3 {
 
 .filter-btn {
     background: white;
-    color: #2c3e50;
+    color: #666;
     border: 2px solid #e9ecef;
-    padding: 12px 25px;
-    border-radius: 30px;
+    padding: 10px 20px;
+    border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-weight: 600;
-    font-size: 1rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
 }
 
 .filter-btn:hover,
 .filter-btn.active {
-    background: linear-gradient(135deg, #f4d03f, #e67e22);
+    background: #f4d03f;
     color: white;
     border-color: #f4d03f;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(244, 208, 63, 0.3);
+    transform: translateY(-2px);
 }
 
 /* Destinations Grid */
@@ -271,11 +249,9 @@ h1, h2, h3 {
 }
 
 .card-header h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.6rem;
-    color: #2c3e50;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 500;
 }
 
 .rating {
@@ -1029,48 +1005,12 @@ h1, h2, h3 {
 
 .category-image {
     height: 200px;
-    position: relative;
-    overflow: hidden;
 }
 
 .category-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.car-placeholder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-align: center;
-}
-
-.car-placeholder i {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-}
-
-.economy-car {
-    background: linear-gradient(135deg, #28a745, #20c997);
-}
-
-.compact-car {
-    background: linear-gradient(135deg, #007bff, #0056b3);
-}
-
-.suv-car {
-    background: linear-gradient(135deg, #fd7e14, #dc3545);
-}
-
-.luxury-car {
-    background: linear-gradient(135deg, #6f42c1, #e83e8c);
 }
 
 .category-content {

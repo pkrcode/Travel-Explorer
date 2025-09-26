@@ -1029,12 +1029,48 @@ h1, h2, h3 {
 
 .category-image {
     height: 200px;
+    position: relative;
+    overflow: hidden;
 }
 
 .category-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.car-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.car-placeholder i {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.economy-car {
+    background: linear-gradient(135deg, #28a745, #20c997);
+}
+
+.compact-car {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.suv-car {
+    background: linear-gradient(135deg, #fd7e14, #dc3545);
+}
+
+.luxury-car {
+    background: linear-gradient(135deg, #6f42c1, #e83e8c);
 }
 
 .category-content {

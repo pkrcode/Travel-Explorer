@@ -477,6 +477,45 @@ body {
     transition: transform 0.3s ease;
 }
 
+.destination-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.destination-placeholder i {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.cinque-terre-bg {
+    background: linear-gradient(135deg, #4a90e2, #7b68ee);
+}
+
+.ha-long-bay-bg {
+    background: linear-gradient(135deg, #00b4db, #0083b0);
+}
+
+.okavango-delta-bg {
+    background: linear-gradient(135deg, #56ab2f, #a8e6cf);
+}
+
+.swiss-alps-bg {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.destination-card:hover .destination-placeholder {
+    transform: scale(1.05);
+}
+
 .destination-card:hover img {
     transform: scale(1.1);
 }
@@ -1033,11 +1072,34 @@ body {
     gap: 1rem;
 }
 
-.author-avatar img {
+.author-avatar {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.author-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
     object-fit: cover;
+}
+
+.avatar-placeholder {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f4d03f, #e67e22);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .author-info h4 {

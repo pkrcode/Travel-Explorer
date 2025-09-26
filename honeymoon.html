@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honeymoon Deals - World Tours</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html">World Tours</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="destinations.html" class="nav-link">Destinations</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="honeymoon.html" class="nav-link">Honeymoon Deals</a>
+                </li>
+                <li class="nav-item">
+                    <a href="foreigner-tours.html" class="nav-link">Foreigner Tours</a>
+                </li>
+                <li class="nav-item">
+                    <a href="car-rentals.html" class="nav-link">Car Rentals</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header honeymoon-header">
+        <div class="header-overlay"></div>
+        <div class="container">
+            <div class="header-content">
+                <h1>Romantic Honeymoon Deals</h1>
+                <p>Create unforgettable memories with our specially curated romantic getaways</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a> / <span>Honeymoon Deals</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Deal -->
+    <section class="featured-deal">
+        <div class="container">
+            <div class="deal-banner">
+                <div class="deal-content">
+                    <div class="deal-badge">💕 Special Offer</div>
+                    <h2>Early Bird Honeymoon Special</h2>
+                    <p>Book 3 months in advance and save up to 30% on luxury honeymoon packages</p>
+                    <div class="deal-timer">
+                        <div class="timer-item">
+                            <span class="timer-number">15</span>
+                            <span class="timer-label">Days</span>
+                        </div>
+                        <div class="timer-item">
+                            <span class="timer-number">08</span>
+                            <span class="timer-label">Hours</span>
+                        </div>
+                        <div class="timer-item">
+                            <span class="timer-number">45</span>
+                            <span class="timer-label">Minutes</span>
+                        </div>
+                    </div>
+                    <button class="deal-btn">Claim Offer</button>
+                </div>
+                <div class="deal-image">
+                    <img src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Romantic sunset">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Honeymoon Packages -->
+    <section class="honeymoon-packages">
+        <div class="container">
+            <div class="section-header">
+                <h2>Romantic Packages</h2>
+                <p>Handpicked destinations perfect for couples</p>
+            </div>
+
+            <div class="packages-grid">
+                <!-- Luxury Package -->
+                <div class="package-card luxury">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Maldives Resort">
+                        <div class="package-badge luxury-badge">Luxury</div>
+                        <div class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Maldives Paradise</h3>
+                        <div class="package-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>5.0 (127 reviews)</span>
+                        </div>
+                        <p>7 days of pure bliss in an overwater villa with private infinity pool and personalized butler service.</p>
+                        <div class="package-features">
+                            <div class="feature">
+                                <i class="fas fa-plane"></i>
+                                <span>Flight Included</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-utensils"></i>
+                                <span>All Meals</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-spa"></i>
+                                <span>Spa Treatment</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-glass-cheers"></i>
+                                <span>Champagne</span>
+                            </div>
+                        </div>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="original-price">$5,999</span>
+                                <span class="current-price">$4,499</span>
+                                <span class="per-person">per couple</span>
+                            </div>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Package -->
+                <div class="package-card premium">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Santorini Greece">
+                        <div class="package-badge premium-badge">Premium</div>
+                        <div class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Santorini Romance</h3>
+                        <div class="package-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.9 (89 reviews)</span>
+                        </div>
+                        <p>5 days in a cave suite with sunset views, private terrace, and romantic dinner experiences.</p>
+                        <div class="package-features">
+                            <div class="feature">
+                                <i class="fas fa-plane"></i>
+                                <span>Flight Included</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bed"></i>
+                                <span>Cave Suite</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-wine-glass-alt"></i>
+                                <span>Wine Tasting</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-camera"></i>
+                                <span>Photo Session</span>
+                            </div>
+                        </div>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="original-price">$3,499</span>
+                                <span class="current-price">$2,799</span>
+                                <span class="per-person">per couple</span>
+                            </div>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Classic Package -->
+                <div class="package-card classic">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Paris France">
+                        <div class="package-badge classic-badge">Classic</div>
+                        <div class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Paris City of Love</h3>
+                        <div class="package-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>4.7 (156 reviews)</span>
+                        </div>
+                        <p>4 days exploring the romantic streets of Paris with Seine river cruise and Eiffel Tower dinner.</p>
+                        <div class="package-features">
+                            <div class="feature">
+                                <i class="fas fa-plane"></i>
+                                <span>Flight Included</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-ship"></i>
+                                <span>River Cruise</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-utensils"></i>
+                                <span>Romantic Dinner</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-map-marked-alt"></i>
+                                <span>City Tour</span>
+                            </div>
+                        </div>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="original-price">$2,299</span>
+                                <span class="current-price">$1,899</span>
+                                <span class="per-person">per couple</span>
+                            </div>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tropical Package -->
+                <div class="package-card tropical">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bali Indonesia">
+                        <div class="package-badge tropical-badge">Tropical</div>
+                        <div class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Bali Tropical Escape</h3>
+                        <div class="package-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.8 (203 reviews)</span>
+                        </div>
+                        <p>6 days in a private villa with pool, couples massage, and cultural experiences in paradise.</p>
+                        <div class="package-features">
+                            <div class="feature">
+                                <i class="fas fa-plane"></i>
+                                <span>Flight Included</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-swimming-pool"></i>
+                                <span>Private Pool</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-spa"></i>
+                                <span>Couples Massage</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-mountain"></i>
+                                <span>Cultural Tour</span>
+                            </div>
+                        </div>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="original-price">$2,999</span>
+                                <span class="current-price">$2,399</span>
+                                <span class="per-person">per couple</span>
+                            </div>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Our Honeymoon Packages?</h2>
+                <p>Making your special moments even more memorable</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Romantic Experiences</h3>
+                    <p>Carefully curated romantic activities and intimate dining experiences designed for couples.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3>Personal Concierge</h3>
+                    <p>Dedicated concierge service to ensure every detail of your honeymoon is perfect.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Special Amenities</h3>
+                    <p>Complimentary champagne, flowers, chocolates, and other romantic surprises.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Worry-Free Planning</h3>
+                    <p>Complete travel insurance and 24/7 support to ensure a stress-free honeymoon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Happy Couples</h2>
+                <p>What our honeymooners say about their experience</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Our Maldives honeymoon was absolutely perfect! Every detail was taken care of, and the overwater villa exceeded our expectations. Thank you for making our dream honeymoon come true!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b8c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Sarah Johnson">
+                            <div class="author-info">
+                                <h4>Sarah & Michael Johnson</h4>
+                                <span>Maldives Paradise Package</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Santorini was magical! The sunset views from our cave suite were breathtaking, and the wine tasting experience was unforgettable. World Tours made everything seamless."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="David Chen">
+                            <div class="author-info">
+                                <h4>Emma & David Chen</h4>
+                                <span>Santorini Romance Package</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Plan Your Dream Honeymoon?</h2>
+                <p>Let our honeymoon specialists create a perfect romantic getaway just for you</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>honeymoon@worldtours.com</span>
+                    </div>
+                </div>
+                <button class="cta-btn primary">Contact Our Specialists</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="honeymoon.js"></script>
+</body>
+</html>

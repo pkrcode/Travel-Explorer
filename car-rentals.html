@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rentals - World Tours</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html">World Tours</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="destinations.html" class="nav-link">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="honeymoon.html" class="nav-link">Honeymoon Deals</a>
+                </li>
+                <li class="nav-item">
+                    <a href="foreigner-tours.html" class="nav-link">Foreigner Tours</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="car-rentals.html" class="nav-link">Car Rentals</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header rental-header">
+        <div class="header-overlay"></div>
+        <div class="container">
+            <div class="header-content">
+                <h1>Car Rentals</h1>
+                <p>Explore destinations at your own pace with our premium vehicle rental service</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a> / <span>Car Rentals</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking-form-section">
+        <div class="container">
+            <div class="booking-form-card">
+                <h2>Find Your Perfect Rental Car</h2>
+                <form class="rental-booking-form" id="rentalForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="pickupLocation">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Pick-up Location
+                            </label>
+                            <input type="text" id="pickupLocation" placeholder="Enter city or airport" required>
+                            <div class="location-suggestions" id="pickupSuggestions"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="dropoffLocation">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Drop-off Location
+                            </label>
+                            <input type="text" id="dropoffLocation" placeholder="Same as pick-up">
+                            <div class="location-suggestions" id="dropoffSuggestions"></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="pickupDate">
+                                <i class="fas fa-calendar-alt"></i>
+                                Pick-up Date
+                            </label>
+                            <input type="date" id="pickupDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pickupTime">
+                                <i class="fas fa-clock"></i>
+                                Pick-up Time
+                            </label>
+                            <select id="pickupTime" required>
+                                <option value="">Select time</option>
+                                <option value="09:00">09:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">01:00 PM</option>
+                                <option value="14:00">02:00 PM</option>
+                                <option value="15:00">03:00 PM</option>
+                                <option value="16:00">04:00 PM</option>
+                                <option value="17:00">05:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dropoffDate">
+                                <i class="fas fa-calendar-alt"></i>
+                                Drop-off Date
+                            </label>
+                            <input type="date" id="dropoffDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dropoffTime">
+                                <i class="fas fa-clock"></i>
+                                Drop-off Time
+                            </label>
+                            <select id="dropoffTime" required>
+                                <option value="">Select time</option>
+                                <option value="09:00">09:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">01:00 PM</option>
+                                <option value="14:00">02:00 PM</option>
+                                <option value="15:00">03:00 PM</option>
+                                <option value="16:00">04:00 PM</option>
+                                <option value="17:00">05:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="driverAge">
+                                <i class="fas fa-user"></i>
+                                Driver's Age
+                            </label>
+                            <select id="driverAge" required>
+                                <option value="">Select age</option>
+                                <option value="21-24">21-24 years</option>
+                                <option value="25-64">25-64 years</option>
+                                <option value="65+">65+ years</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="currency">
+                                <i class="fas fa-dollar-sign"></i>
+                                Currency
+                            </label>
+                            <select id="currency" required>
+                                <option value="USD">USD - US Dollar</option>
+                                <option value="EUR">EUR - Euro</option>
+                                <option value="GBP">GBP - British Pound</option>
+                                <option value="CAD">CAD - Canadian Dollar</option>
+                                <option value="AUD">AUD - Australian Dollar</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="search-cars-btn">
+                        <i class="fas fa-search"></i>
+                        Search Available Cars
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Categories -->
+    <section class="car-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Choose Your Vehicle Type</h2>
+                <p>From economy to luxury, find the perfect car for your journey</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Economy Car">
+                    </div>
+                    <div class="category-content">
+                        <h3>Economy</h3>
+                        <p>Perfect for city driving and budget-conscious travelers</p>
+                        <div class="category-features">
+                            <span><i class="fas fa-user"></i> 4-5 seats</span>
+                            <span><i class="fas fa-suitcase"></i> 2 bags</span>
+                            <span><i class="fas fa-gas-pump"></i> Fuel efficient</span>
+                        </div>
+                        <div class="category-price">From $25/day</div>
+                        <button class="category-btn">View Cars</button>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1551522435-a13afa10f103?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Compact Car">
+                    </div>
+                    <div class="category-content">
+                        <h3>Compact</h3>
+                        <p>Great balance of space, comfort, and affordability</p>
+                        <div class="category-features">
+                            <span><i class="fas fa-user"></i> 4-5 seats</span>
+                            <span><i class="fas fa-suitcase"></i> 3 bags</span>
+                            <span><i class="fas fa-road"></i> City & Highway</span>
+                        </div>
+                        <div class="category-price">From $35/day</div>
+                        <button class="category-btn">View Cars</button>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="SUV">
+                    </div>
+                    <div class="category-content">
+                        <h3>SUV</h3>
+                        <p>Spacious and versatile for families and adventure</p>
+                        <div class="category-features">
+                            <span><i class="fas fa-user"></i> 5-7 seats</span>
+                            <span><i class="fas fa-suitcase"></i> 4+ bags</span>
+                            <span><i class="fas fa-mountain"></i> All terrain</span>
+                        </div>
+                        <div class="category-price">From $65/day</div>
+                        <button class="category-btn">View Cars</button>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1559416523-140ddc3d238c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Car">
+                    </div>
+                    <div class="category-content">
+                        <h3>Luxury</h3>
+                        <p>Premium vehicles for the ultimate driving experience</p>
+                        <div class="category-features">
+                            <span><i class="fas fa-user"></i> 4-5 seats</span>
+                            <span><i class="fas fa-star"></i> Premium</span>
+                            <span><i class="fas fa-crown"></i> High-end</span>
+                        </div>
+                        <div class="category-price">From $125/day</div>
+                        <button class="category-btn">View Cars</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section class="popular-rental-destinations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular Rental Destinations</h2>
+                <p>Top cities for car rentals around the world</p>
+            </div>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="London">
+                    <div class="destination-overlay">
+                        <h3>London, UK</h3>
+                        <p>150+ rental locations</p>
+                        <div class="destination-price">From $45/day</div>
+                        <button class="destination-btn">Rent in London</button>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1502602898536-47ad22581b52?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Paris">
+                    <div class="destination-overlay">
+                        <h3>Paris, France</h3>
+                        <p>120+ rental locations</p>
+                        <div class="destination-price">From $42/day</div>
+                        <button class="destination-btn">Rent in Paris</button>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1543731068-5b0e74cfc7c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tokyo">
+                    <div class="destination-overlay">
+                        <h3>Tokyo, Japan</h3>
+                        <p>100+ rental locations</p>
+                        <div class="destination-price">From $55/day</div>
+                        <button class="destination-btn">Rent in Tokyo</button>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="New York">
+                    <div class="destination-overlay">
+                        <h3>New York, USA</h3>
+                        <p>200+ rental locations</p>
+                        <div class="destination-price">From $38/day</div>
+                        <button class="destination-btn">Rent in NYC</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features & Benefits -->
+    <section class="rental-features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Our Car Rental Service?</h2>
+                <p>Premium service and peace of mind for every journey</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Comprehensive Insurance</h3>
+                    <p>Full coverage protection with zero excess options available</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Roadside Assistance</h3>
+                    <p>Round-the-clock support wherever your journey takes you</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-times-circle"></i>
+                    </div>
+                    <h3>Free Cancellation</h3>
+                    <p>Cancel up to 24 hours before pickup with no charges</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-gas-pump"></i>
+                    </div>
+                    <h3>Flexible Fuel Policy</h3>
+                    <p>Multiple fuel options to suit your travel needs</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Premium Locations</h3>
+                    <p>Convenient pickup from airports, hotels, and city centers</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Quality Guaranteed</h3>
+                    <p>Well-maintained vehicles from trusted rental partners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rental Tips -->
+    <section class="rental-tips">
+        <div class="container">
+            <div class="section-header">
+                <h2>Car Rental Tips</h2>
+                <p>Make the most of your rental experience</p>
+            </div>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3>Required Documents</h3>
+                    <ul>
+                        <li>Valid driver's license</li>
+                        <li>International driving permit (if required)</li>
+                        <li>Credit card in driver's name</li>
+                        <li>Passport or ID</li>
+                    </ul>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Booking Tips</h3>
+                    <ul>
+                        <li>Book early for better rates</li>
+                        <li>Compare different car categories</li>
+                        <li>Check fuel policy options</li>
+                        <li>Review insurance coverage</li>
+                    </ul>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Before You Drive</h3>
+                    <ul>
+                        <li>Inspect the vehicle thoroughly</li>
+                        <li>Take photos of any damage</li>
+                        <li>Check fuel level and mileage</li>
+                        <li>Familiarize with controls</li>
+                    </ul>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>During Your Trip</h3>
+                    <ul>
+                        <li>Follow local traffic rules</li>
+                        <li>Keep rental agreement handy</li>
+                        <li>Park in safe, legal areas</li>
+                        <li>Contact us for any issues</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="rental-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Hit the Road?</h2>
+                <p>Book your perfect rental car today and explore the world at your own pace</p>
+                <div class="cta-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Pickup Locations</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50,000+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Customer Support</span>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <button class="cta-btn primary" onclick="document.getElementById('rentalForm').scrollIntoView()">
+                        Start Your Search
+                    </button>
+                    <button class="cta-btn secondary">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="car-rentals.js"></script>
+</body>
+</html>

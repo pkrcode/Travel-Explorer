@@ -1,0 +1,28 @@
+{
+    "name": "travel-explorer",
+    "version": "1.0.0",
+    "description": "A modern travel exploration website with dynamic content and API integrations.",
+    "main": "script.js",
+    "scripts": {
+        "start": "python -m http.server 8000",
+        "build": "mkdir -p dist && cp -r *.html *.css *.js assets dist/",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/YOUR_USERNAME/TravelExplorer.git"
+    },
+    "keywords": [
+        "travel",
+        "tourism",
+        "javascript",
+        "api",
+        "vercel"
+    ],
+    "author": "Your Name",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/YOUR_USERNAME/TravelExplorer/issues"
+    },
+    "homepage": "https://github.com/YOUR_USERNAME/TravelExplorer#readme"
+}

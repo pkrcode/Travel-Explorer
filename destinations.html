@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - World Tours</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html">World Tours</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="destinations.html" class="nav-link">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="honeymoon.html" class="nav-link">Honeymoon Deals</a>
+                </li>
+                <li class="nav-item">
+                    <a href="foreigner-tours.html" class="nav-link">Foreigner Tours</a>
+                </li>
+                <li class="nav-item">
+                    <a href="car-rentals.html" class="nav-link">Car Rentals</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header destinations-header">
+        <div class="header-overlay"></div>
+        <div class="container">
+            <div class="header-content">
+                <h1>Popular Destinations</h1>
+                <p>Discover amazing places around the world with our carefully curated travel destinations</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a> / <span>Destinations</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Destinations</button>
+                <button class="filter-btn" data-filter="europe">Europe</button>
+                <button class="filter-btn" data-filter="asia">Asia</button>
+                <button class="filter-btn" data-filter="america">America</button>
+                <button class="filter-btn" data-filter="africa">Africa</button>
+                <button class="filter-btn" data-filter="oceania">Oceania</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Grid -->
+    <section class="destinations-grid">
+        <div class="container">
+            <div class="grid-container">
+                <!-- Europe Destinations -->
+                <div class="destination-item" data-category="europe">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cinque Terre, Italy">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Cinque Terre, Italy</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+                            <p>Five picturesque fishing villages perched on rugged cliffs along the Italian Riviera.</p>
+                            <div class="card-footer">
+                                <div class="price">From $899</div>
+                                <button class="explore-btn">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-item" data-category="europe">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Swiss Alps">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Swiss Alps</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                </div>
+                            </div>
+                            <p>Majestic mountain peaks, pristine lakes, and charming alpine villages in the heart of Europe.</p>
+                            <div class="card-footer">
+                                <div class="price">From $1299</div>
+                                <button class="explore-btn">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-item" data-category="europe">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="London, UK">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>London, UK</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>4.6</span>
+                                </div>
+                            </div>
+                            <p>Historic landmarks, world-class museums, and vibrant culture in Britain's iconic capital.</p>
+                            <div class="card-footer">
+                                <div class="price">From $799</div>
+                                <button class="explore-btn">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Asia Destinations -->
+                <div class="destination-item" data-category="asia">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ha Long Bay, Vietnam">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Ha Long Bay, Vietnam</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+                            <p>Emerald waters dotted with thousands of limestone karsts and isles of various shapes.</p>
+                            <div class="card-footer">
+                                <div class="price">From $649</div>
+                                <button class="explore-btn">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-item" data-category="asia">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kyoto, Japan">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Kyoto, Japan</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                </div>
+                            </div>
+                            <p>Ancient temples, traditional gardens, and preserved historic districts in Japan's cultural heart.</p>
+                            <div class="card-footer">
+                                <div class="price">From $1099</div>
+                                <button class="explore-btn">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-item" data-category="asia">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bali, Indonesia">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Bali, Indonesia</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>4.7</span>
+                                </div>
+                            </div>
+                            <p>Tropical paradise with stunning beaches, rice terraces, and rich Hindu culture.</p>
+                            <div class="card-footer">
+                                <div class="price">From $549</div>
+                                <button class="explore-btn">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- America Destinations -->
+                <div class="destination-item" data-category="america">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Grand Canyon, USA">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Grand Canyon, USA</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+                            <p>One of the world's most spectacular natural wonders carved by the Colorado River.</p>
+                            <div class="card-footer">
+                                <div class="price">From $799</div>
+                                <button class="explore-btn">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-item" data-category="america">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Machu Picchu, Peru">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Machu Picchu, Peru</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                </div>
+                            </div>
+                            <p>Ancient Incan citadel perched high in the Andes Mountains, shrouded in mystery.</p>
+                            <div class="card-footer">
+                                <div class="price">From $999</div>
+                                <button class="explore-btn">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Africa Destinations -->
+                <div class="destination-item" data-category="africa">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Okavango Delta, Botswana">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Okavango Delta, Botswana</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                </div>
+                            </div>
+                            <p>World's largest inland delta, teeming with wildlife and pristine wetland landscapes.</p>
+                            <div class="card-footer">
+                                <div class="price">From $1899</div>
+                                <button class="explore-btn">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-item" data-category="africa">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cape Town, South Africa">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Cape Town, South Africa</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>4.6</span>
+                                </div>
+                            </div>
+                            <p>Stunning city beneath Table Mountain with beaches, wine regions, and rich history.</p>
+                            <div class="card-footer">
+                                <div class="price">From $1299</div>
+                                <button class="explore-btn">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Oceania Destinations -->
+                <div class="destination-item" data-category="oceania">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sydney, Australia">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Sydney, Australia</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>4.7</span>
+                                </div>
+                            </div>
+                            <p>Iconic Opera House, stunning harbor, and beautiful beaches in Australia's harbor city.</p>
+                            <div class="card-footer">
+                                <div class="price">From $1599</div>
+                                <button class="explore-btn">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Adventure?</h2>
+                <p>Contact our travel experts to plan your perfect journey</p>
+                <div class="cta-buttons">
+                    <button class="cta-btn primary">Plan My Trip</button>
+                    <button class="cta-btn secondary">Get Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="destinations.js"></script>
+</body>
+</html>

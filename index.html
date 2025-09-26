@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Tours - Travel Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>World Tours</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item active">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="destinations.html" class="nav-link">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="honeymoon.html" class="nav-link">Honeymoon Deals</a>
+                </li>
+                <li class="nav-item">
+                    <a href="foreigner-tours.html" class="nav-link">Foreigner Tours</a>
+                </li>
+                <li class="nav-item">
+                    <a href="car-rentals.html" class="nav-link">Car Rentals</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="hero-section" id="home">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>World Tours</h1>
+                    <p>This text presents my research journey on the topic of Music and Tourism Imaginaries and gives the context which led to the publication of this special issue of Via Tourism Review.</p>
+                    <button class="cta-button">see more</button>
+                </div>
+                
+                <!-- Search Section -->
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Search for destinations..." class="search-input">
+                        <button id="searchBtn" class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="hero-navigation">
+            <button class="nav-arrow nav-prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="nav-arrow nav-next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Destination Showcase Cards -->
+        <div class="destination-showcase">
+            <div class="destination-card active" data-destination="cinque-terre">
+                <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Cinque Terre">
+                <div class="card-overlay">
+                    <h3>Cinque Terre</h3>
+                </div>
+            </div>
+            
+            <div class="destination-card" data-destination="ha-long-bay">
+                <img src="https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Ha Long Bay">
+                <div class="card-overlay">
+                    <h3>Ha Long Bay</h3>
+                </div>
+            </div>
+            
+            <div class="destination-card" data-destination="okavango-delta">
+                <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Okavango Delta">
+                <div class="card-overlay">
+                    <h3>Okavango Delta</h3>
+                </div>
+            </div>
+            
+            <div class="destination-card" data-destination="swiss-alps">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Swiss Alps">
+                <div class="card-overlay">
+                    <h3>Swiss Alps</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Search Results Section -->
+    <section class="search-results" id="results">
+        <div class="container">
+            <div class="results-header">
+                <h2>Search Results</h2>
+                <button class="clear-results" id="clearResults">Clear Results</button>
+            </div>
+            
+            <!-- Photo Gallery -->
+            <div class="photo-gallery" id="photoGallery">
+                <!-- Dynamic photos will be inserted here -->
+            </div>
+            
+            <!-- Weather Information -->
+            <div class="weather-section" id="weatherSection">
+                <div class="weather-card">
+                    <div class="weather-header">
+                        <h3 id="weatherCity">Weather Information</h3>
+                        <div class="weather-icon" id="weatherIcon">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                    </div>
+                    <div class="weather-details">
+                        <div class="temperature" id="temperature">--°C</div>
+                        <div class="weather-info">
+                            <div class="info-item">
+                                <span class="label">Condition:</span>
+                                <span class="value" id="condition">--</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Humidity:</span>
+                                <span class="value" id="humidity">--%</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Wind Speed:</span>
+                                <span class="value" id="windSpeed">-- km/h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loading Indicator -->
+    <div class="loading" id="loadingIndicator">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <!-- Error Message -->
+    <div class="error-message" id="errorMessage">
+        <div class="error-content">
+            <i class="fas fa-exclamation-triangle"></i>
+            <h3>Something went wrong!</h3>
+            <p id="errorText">Please try again later.</p>
+            <button class="retry-btn" id="retryBtn">Retry</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Tours - Travel Explorer</title>
+    <title>Travel Explorer - Premium Travel & Tourism Solutions</title>
+    <meta name="description" content="Discover extraordinary destinations with Travel Explorer. Professional travel planning, luxury tours, and personalized experiences worldwide.">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -13,7 +14,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>World Tours</h2>
+                <h2><i class="fas fa-globe-americas"></i> Travel Explorer</h2>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item active">
@@ -23,13 +24,16 @@
                     <a href="destinations.html" class="nav-link">Destinations</a>
                 </li>
                 <li class="nav-item">
-                    <a href="honeymoon.html" class="nav-link">Honeymoon Deals</a>
+                    <a href="honeymoon.html" class="nav-link">Luxury Packages</a>
                 </li>
                 <li class="nav-item">
-                    <a href="foreigner-tours.html" class="nav-link">Foreigner Tours</a>
+                    <a href="foreigner-tours.html" class="nav-link">International Tours</a>
                 </li>
                 <li class="nav-item">
                     <a href="car-rentals.html" class="nav-link">Car Rentals</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link cta-nav">Get Quote</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -46,18 +50,50 @@
             <div class="hero-overlay"></div>
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>World Tours</h1>
-                    <p>This text presents my research journey on the topic of Music and Tourism Imaginaries and gives the context which led to the publication of this special issue of Via Tourism Review.</p>
-                    <button class="cta-button">see more</button>
+                    <div class="hero-badge">
+                        <i class="fas fa-award"></i>
+                        <span>Premium Travel Experiences Since 2020</span>
+                    </div>
+                    <h1>Discover the World's Most <span class="highlight">Extraordinary</span> Destinations</h1>
+                    <p class="hero-subtitle">We craft personalized luxury travel experiences that create lasting memories. From exotic adventures to cultural immersions, let us transform your travel dreams into reality.</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Countries</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10K+</span>
+                            <span class="stat-label">Happy Travelers</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Satisfaction Rate</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="cta-button primary">Start Planning</button>
+                        <button class="cta-button secondary">
+                            <i class="fas fa-play"></i>
+                            Watch Our Story
+                        </button>
+                    </div>
                 </div>
                 
                 <!-- Search Section -->
                 <div class="search-container">
+                    <div class="search-header">
+                        <h3>Where Would You Like to Go?</h3>
+                        <p>Search for destinations and discover real-time weather and stunning visuals</p>
+                    </div>
                     <div class="search-box">
-                        <input type="text" id="searchInput" placeholder="Search for destinations..." class="search-input">
-                        <button id="searchBtn" class="search-btn">
-                            <i class="fas fa-search"></i>
-                        </button>
+                        <div class="search-input-group">
+                            <i class="fas fa-map-marker-alt search-icon"></i>
+                            <input type="text" id="searchInput" placeholder="Enter destination (e.g., Paris, Tokyo, Bali...)" class="search-input">
+                            <button id="searchBtn" class="search-btn">
+                                <span>Explore</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -148,6 +184,214 @@
             </div>
         </div>
     </section>
+
+    <!-- Professional Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Travel Explorer</h2>
+                <p>We provide comprehensive travel solutions tailored to your unique preferences</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3>Personalized Service</h3>
+                    <p>Dedicated travel consultants work with you to create the perfect itinerary based on your interests and budget.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure & Reliable</h3>
+                    <p>ATOL protected bookings with 24/7 support. Your peace of mind is our priority throughout your journey.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Award-Winning</h3>
+                    <p>Recognized as Best Travel Agency 2024 with over 10,000 satisfied customers and 98% recommendation rate.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe-europe"></i>
+                    </div>
+                    <h3>Global Reach</h3>
+                    <p>Access to exclusive destinations and experiences across 50+ countries with our extensive partner network.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Travelers Say</h2>
+                <p>Real experiences from real travelers</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"Absolutely exceptional service! Travel Explorer planned our honeymoon to the Maldives perfectly. Every detail was handled with care."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Sarah Johnson">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>Honeymooner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"The Japan cultural tour exceeded all expectations. The guides were knowledgeable and the itinerary was perfectly balanced."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Michael Chen">
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <span>Cultural Explorer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"Family adventure to Costa Rica was incredible! Kid-friendly activities and seamless logistics made it stress-free for parents."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Emma Rodriguez">
+                        </div>
+                        <div class="author-info">
+                            <h4>Emma Rodriguez</h4>
+                            <span>Family Traveler</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Ready to Start Your Journey?</h2>
+                    <p>Let our travel experts create a personalized experience just for you. Get in touch today for a free consultation.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>hello@travelexplorer.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Mon-Fri: 9AM-6PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Interested Destination</label>
+                            <select id="destination" name="destination">
+                                <option value="">Select a destination</option>
+                                <option value="europe">Europe</option>
+                                <option value="asia">Asia</option>
+                                <option value="americas">Americas</option>
+                                <option value="africa">Africa</option>
+                                <option value="oceania">Oceania</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell us about your dream trip</label>
+                            <textarea id="message" name="message" rows="4" placeholder="What type of experience are you looking for?"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Get My Free Quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-globe-americas"></i> Travel Explorer</h3>
+                    <p>Creating extraordinary travel experiences since 2020. Your journey begins here.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="honeymoon.html">Luxury Packages</a></li>
+                        <li><a href="foreigner-tours.html">International Tours</a></li>
+                        <li><a href="car-rentals.html">Car Rentals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#press">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#help">Help Center</a></li>
+                        <li><a href="#booking">Booking Terms</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#safety">Travel Safety</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Travel Explorer. All rights reserved. | ATOL Protected | IATA Accredited</p>
+            </div>
+        </div>
+    </footer>
 
     <!-- Loading Indicator -->
     <div class="loading" id="loadingIndicator">

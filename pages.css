@@ -1,7 +1,31 @@
 /*
-Additional CSS for World Tours website pages
-Styles for Destinations, Honeymoon, Foreigner Tours, and Car Rentals pages
+Professional CSS for Travel Explorer website pages
+Enhanced styling for Destinations, Luxury Packages, International Tours, and Car Rentals pages
+Using modern design principles with Poppins and Playfair Display fonts
 */
+
+/* Global Typography Update */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Professional Navigation Logo Link Styling */
+.nav-logo a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-logo a:hover {
+    color: #f4d03f;
+    transition: color 0.3s ease;
+}
 
 /* Page Headers */
 .page-header {
@@ -52,17 +76,44 @@ Styles for Destinations, Honeymoon, Foreigner Tours, and Car Rentals pages
 }
 
 .header-content h1 {
+    font-family: 'Playfair Display', serif;
     font-size: 3.5rem;
-    font-weight: 300;
+    font-weight: 600;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px;
 }
 
 .header-content p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 2rem;
-    opacity: 0.9;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    opacity: 0.95;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.header-content .cta-button {
+    background: linear-gradient(135deg, #f4d03f, #e67e22);
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 25px rgba(244, 208, 63, 0.4);
+}
+
+.header-content .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(244, 208, 63, 0.6);
+    background: linear-gradient(135deg, #e67e22, #f4d03f);
 }
 
 .breadcrumb {
@@ -92,17 +143,21 @@ Styles for Destinations, Honeymoon, Foreigner Tours, and Car Rentals pages
 }
 
 .section-header h2 {
-    font-size: 2.5rem;
-    color: #333;
-    font-weight: 300;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #2c3e50;
+    font-weight: 600;
     margin-bottom: 1rem;
+    letter-spacing: 1px;
 }
 
 .section-header p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #666;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
+    line-height: 1.6;
+    font-weight: 400;
 }
 
 /* Filter Section (Destinations Page) */
@@ -120,21 +175,24 @@ Styles for Destinations, Honeymoon, Foreigner Tours, and Car Rentals pages
 
 .filter-btn {
     background: white;
-    color: #666;
+    color: #2c3e50;
     border: 2px solid #e9ecef;
-    padding: 10px 20px;
-    border-radius: 25px;
+    padding: 12px 25px;
+    border-radius: 30px;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .filter-btn:hover,
 .filter-btn.active {
-    background: #f4d03f;
+    background: linear-gradient(135deg, #f4d03f, #e67e22);
     color: white;
     border-color: #f4d03f;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(244, 208, 63, 0.3);
 }
 
 /* Destinations Grid */
@@ -213,9 +271,11 @@ Styles for Destinations, Honeymoon, Foreigner Tours, and Car Rentals pages
 }
 
 .card-header h3 {
-    font-size: 1.5rem;
-    color: #333;
-    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
 
 .rating {

@@ -108,6 +108,15 @@ function setupEventListeners() {
     // Mobile navigation
     elements.hamburger.addEventListener('click', toggleMobileMenu);
 
+    // Close mobile menu when nav links are clicked
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            elements.navMenu.classList.remove('active');
+            elements.hamburger.classList.remove('active');
+        });
+    });
+
     // Hero navigation
     elements.heroNavPrev.addEventListener('click', function() {
         changeHeroBackground(-1);

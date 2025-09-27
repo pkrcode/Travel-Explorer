@@ -55,6 +55,49 @@ Follow these instructions to get a local copy up and running for development and
 4. **Open in your browser:**
    Navigate to `http://localhost:8000` to see the website in action.
 
+### 📱 Mobile Device Testing
+
+Want to view the site on your phone while developing?
+
+#### Option A: Same Wi‑Fi (LAN)
+1. Install dependencies for a static server (first time only):
+   ```bash
+   npm install --save-dev serve
+   ```
+   (Or just rely on `npx` each time.)
+2. Start the dev server that binds to all interfaces:
+   ```bash
+   npm run lan
+   ```
+3. Find your computer's local IP (Windows PowerShell):
+   ```powershell
+   (Get-NetIPAddress -AddressFamily IPv4 -InterfaceAlias "*Wi-Fi*","*Ethernet*" | Where-Object { $_.IPAddress -notlike "169.*" }).IPAddress
+   ```
+4. On your phone (same network) open: `http://YOUR_IP:5173`
+
+#### Option B: Quick Tunnel (Public Temporary URL)
+Use a one‑time secure URL if your phone is on cellular.
+```bash
+npm install -g cloudflared   # or download executable from Cloudflare
+cloudflared tunnel --url http://localhost:5173
+```
+Copy the generated https URL into your phone browser.
+
+#### Option C: Vercel Preview
+Push changes → Vercel auto‑deploys → open preview URL on phone.
+
+#### QR Code (Optional)
+Generate a QR for the LAN URL:
+```powershell
+pip install qrcode[pil]
+python - <<'PY'
+import qrcode; url='http://192.168.1.42:5173'; qrcode.make(url).save('mobile-url.png'); print('Saved mobile-url.png')
+PY
+```
+Scan `mobile-url.png` from your phone.
+
+> Tip: If the page doesn’t load over LAN, allow the Node/serve process in Windows Firewall (Private networks).
+
 ## ☁️ Deployment
 
 This project is configured for easy deployment on [Vercel](https://vercel.com/).

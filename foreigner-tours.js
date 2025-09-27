@@ -745,7 +745,8 @@ function addTourModalStyles() {
         }
         
         .tour-highlights li::before {
-            content: '✓';
+            /* Use Unicode escape for checkmark to avoid garbled characters when encoding interpreted incorrectly */
+            content: "\\2713"; /* CSS needs double backslash inside JS string */
             position: absolute;
             left: 0;
             color: #27ae60;

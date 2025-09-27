@@ -1000,7 +1000,8 @@ body {
 }
 
 .type-features li::before {
-    content: '✓';
+    /* Use Unicode escape to avoid mojibake like âœ or âœ" showing if charset mis-detected */
+    content: "\2713"; /* checkmark */
     position: absolute;
     left: 0;
     color: #27ae60;

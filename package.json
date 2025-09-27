@@ -5,6 +5,8 @@
     "main": "script.js",
     "scripts": {
         "start": "python -m http.server 8000",
+        "dev": "npx serve -l 5173 .",
+        "lan": "npx serve -l 0.0.0.0:5173 .",
         "build": "mkdir -p dist && cp -r *.html *.css *.js assets dist/",
         "test": "echo \"Error: no test specified\" && exit 1"
     },

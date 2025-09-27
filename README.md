@@ -20,7 +20,7 @@ A modern, responsive travel website designed to help users discover new destinat
 
 The project is deployed on Vercel. You can view the live version here:
 
-[**Travel Explorer Live**]([https://vercel.com/praveen-kumars-projects-81ba3472/travel-explorer])
+[**Travel Explorer Live**](https://vercel.com/praveen-kumars-projects-81ba3472/travel-explorer)
 
 ## 🛠️ Getting Started
 

@@ -7,6 +7,9 @@ Consistent with main homepage styling
 /* Import same fonts as main page */
 body {
     font-family: 'Poppins', sans-serif;
+    --nav-height: 92px;
+    padding-top: var(--nav-height);
+    background:#0d0f11; /* Prevent white flash above hero (Car Rentals issue) */
 }
 
 /* Complete Professional Navigation Styles (matching homepage exactly) */
@@ -192,21 +195,18 @@ body {
     .nav-container {
         padding: 0 15px;
     }
-    
-    .hero-content {
-        padding: 140px 20px 0 20px; /* Increased mobile top padding */
-    }
 }
 
 /* Professional Hero Section for Pages */
 .page-hero {
-    height: 100vh;
+    min-height: calc(100vh - var(--nav-height));
     position: relative;
     display: flex;
-    align-items: flex-start; /* Changed from center to flex-start */
+    align-items: center;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    scroll-margin-top: var(--nav-height);
 }
 
 .honeymoon-hero {
@@ -252,10 +252,10 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 120px 20px 0 20px; /* Added top padding for navbar */
+    padding: 0 20px; /* Offset handled globally */
     display: flex;
     align-items: center;
-    min-height: 100vh;
+    min-height: calc(100vh - var(--nav-height));
 }
 
 .hero-text {
@@ -1818,6 +1818,10 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    body {
+        --nav-height: 78px;
+        padding-top: var(--nav-height);
+    }
     .header-content h1 {
         font-size: 2.5rem;
     }

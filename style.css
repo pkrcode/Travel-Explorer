@@ -18,7 +18,8 @@ Travel Explorer Website CSS
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 100px; /* Account for fixed navbar */
+    /* Will be updated via --nav-height so anchor targets are fully visible */
+    scroll-padding-top: var(--nav-height, 90px);
 }
 
 body {
@@ -26,6 +27,10 @@ body {
     line-height: 1.6;
     color: #333;
     overflow-x: hidden;
+    /* Reserve space so first section content never hides behind fixed nav */
+    --nav-height: 92px; /* Real nav height incl. padding on desktop */
+    padding-top: var(--nav-height);
+    background: #0d0f11; /* subtle dark to prevent white flash on load */
 }
 
 .container {
@@ -142,12 +147,12 @@ body {
 
 /* Hero Section */
 .hero-section {
-    height: 100vh;
+    min-height: calc(100vh - var(--nav-height));
     position: relative;
     display: flex;
-    align-items: flex-start; /* Changed from center to flex-start */
+    align-items: center;
     overflow: hidden;
-    scroll-margin-top: 80px; /* Account for fixed navbar */
+    scroll-margin-top: var(--nav-height);
 }
 
 .hero-background {
@@ -204,7 +209,7 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 140px 20px 0 20px; /* Increased from 100px to 140px */
+    padding: 0 20px; /* Top space handled by body padding */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
@@ -837,7 +842,12 @@ body {
         grid-template-columns: 1fr;
         gap: 2rem;
         text-align: center;
-        padding: 160px 20px 0 20px; /* Increased from 120px to 160px for mobile */
+        padding: 0 20px; /* Consistent; body padding already offsets */
+    }
+
+    body {
+        --nav-height: 78px; /* Slightly smaller on mobile */
+        padding-top: var(--nav-height);
     }
     
     .destination-showcase {

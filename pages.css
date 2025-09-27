@@ -192,6 +192,10 @@ body {
     .nav-container {
         padding: 0 15px;
     }
+    
+    .hero-content {
+        padding: 140px 20px 0 20px; /* Increased mobile top padding */
+    }
 }
 
 /* Professional Hero Section for Pages */
@@ -199,7 +203,7 @@ body {
     height: 100vh;
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Changed from center to flex-start */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -248,7 +252,7 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 120px 20px 0 20px; /* Added top padding for navbar */
     display: flex;
     align-items: center;
     min-height: 100vh;

@@ -204,7 +204,7 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 100px 20px 0 20px; /* Add top padding for navbar */
+    padding: 140px 20px 0 20px; /* Increased from 100px to 140px */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
@@ -837,7 +837,7 @@ body {
         grid-template-columns: 1fr;
         gap: 2rem;
         text-align: center;
-        padding: 120px 20px 0 20px; /* Increased top padding for mobile */
+        padding: 160px 20px 0 20px; /* Increased from 120px to 160px for mobile */
     }
     
     .destination-showcase {
